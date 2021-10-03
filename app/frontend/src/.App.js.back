@@ -1,0 +1,42 @@
+import './App.css';
+import KarilianHeder from './Components/Header/KarilianHeader'
+import Upload from "./Components/Upload/Upload"
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import Lab from './Components/Pages/Lab';
+import Run from './Components/Pages/Run';
+import Network from './Components/Pages/Network';
+
+
+
+function App() {
+  return (
+    <>
+      <Router>
+        <KarilianHeder />
+        <Switch>
+         <Route path="/upload" >
+            <Upload />
+          </Route>
+          <Route path="/lab" >
+            <Lab />
+          </Route>
+          <Route path="/run" >
+            <Run />
+          </Route>
+          <Route path="/network" >
+            <Network />
+          </Route>
+        </Switch>
+
+      </Router>
+    </>
+  );
+}
+
+export default App;

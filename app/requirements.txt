@@ -1,0 +1,17 @@
+django==3.2.4
+djangorestframework==3.12.4
+django-rest-auth
+django-allauth
+django-cors-headers
+
+
+#postgres binary
+psycopg2-binary==2.9.1
+
+#testing libs
+pytest-django==4.4.0
+pytest==6.2.4
+flake8==3.9.2
+
+# used to create graph of schema
+pygraphviz
