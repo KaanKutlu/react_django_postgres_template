@@ -22,14 +22,14 @@ jobs:
         docker-compose up --build -d
     - name: Lint with flake8
       run: |
-        docker-compose exec -T hopper-django flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        docker-compose exec -T unnamed-django flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Python Tests
       working-directory: app/
       run: |
-        docker-compose exec -T hopper-django pytest 
+        docker-compose exec -T unnamed-django pytest 
     - name: JS Tests
       working-directory: app/
       run: |
-       docker-compose exec -T hopper-frontend bash -c "ls && npm install && CI=1 npm test"
+       docker-compose exec -T unnamed-frontend bash -c "ls && npm install && CI=1 npm test"
