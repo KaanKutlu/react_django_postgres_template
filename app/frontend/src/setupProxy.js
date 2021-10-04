@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://easley-django:8000',
+      target: 'http://unnamed-django:8000',
       changeOrigin: true,
       secure: false,
     })

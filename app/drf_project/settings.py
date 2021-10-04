@@ -51,8 +51,7 @@ INSTALLED_APPS = [
     #'django_extensions',
 
     # Local Apps
-    'users',
-    'samples',
+    'unnamed',
 ]
 
 
@@ -129,7 +128,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'users.CustomUser'
 
 # Django All Auth config. Add all of this.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

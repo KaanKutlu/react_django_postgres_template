@@ -5,14 +5,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import GeneSearch from './Components/PageSearch/GeneSearch';
-import DisplayInfo from './Components/Pages/DisplayInfo';
+import HelloWorld from './Components/HelloWorld';
 
 
 function App() {
   return (
     <>
-      <DisplayInfo />
+    <HelloWorld />
     </>
   );
 }
