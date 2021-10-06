@@ -1,7 +1,7 @@
 # Unnamed Template
 
 
-This is a simple template for a django, react-frontend, postgres db.
+This is a simple template for a django, react-frontend, and postgres db.
 
 ## Docker Setutp
 
