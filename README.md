@@ -56,7 +56,7 @@ python manage.py migrate
 
 Within `app/frontend` is where the logic for the frontend.
 
-A simple component example is shown in `app/frontend/Component/HelloWorld.jsx` - which is imported in `app/frontend/App.jsx`.
+Right now, it is the default "blank" react app that will link to tutorial resources.
 
 
 # Warnings:
